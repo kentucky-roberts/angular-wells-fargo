@@ -1,0 +1,15 @@
+{
+  "name": "angular-wells-fargo",
+  "version": "0.0.0",
+  "authors": [
+    "kentucky-roberts <croberts@lknpro.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

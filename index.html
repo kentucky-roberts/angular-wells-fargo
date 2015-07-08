@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<body>
+
+
+
+
+
+
+  <div ng-controller="MyController">
+    Hello {{greetMe}}!
+  </div>
+
+
+  <div ng-controller="MyOtherController">
+    Hello {{greetOther}}!
+  </div>
+
+
+
+
+  <script src="http://code.angularjs.org/snapshot/angular.js"></script>
+  <script>
+
+
+    angular.module('myApp', [])
+
+      .controller('MyController', ['$scope', function ($scope) {
+        $scope.greetMe = 'World';
+      }]);
+
+
+      .controller('MyOtherController', ['$scope', function ($scope) {
+        $scope.greetOther = 'Other Greeting';
+      }]);
+
+
+    angular.element(document).ready(function() {
+      angular.bootstrap(document, ['myApp']);
+    });
+
+
+
+
+  </script>
+</body>
+</html>
